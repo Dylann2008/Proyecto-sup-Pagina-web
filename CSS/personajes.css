@@ -1,0 +1,459 @@
+:root{
+    --Fondo:#000000b4;
+    --Decoracion:#d4a574;
+    --Letras:#ffffffdc;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+body{
+    background-image: url("../IMAGENES/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main{
+    padding: 5rem 0;
+}
+#titulo{
+    text-align: center;
+    background-color: var(--Fondo);
+    border-radius: 5rem;
+    border: solid 3px #000000;
+    margin: 2rem 15rem 3rem 15rem;
+    padding: 1rem 0;
+}
+#titulo h1{
+    font-family: 'Cinzel', serif;
+    font-size: 5rem;
+    color: var(--Decoracion);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px #d4a57480;
+}
+#titulo p {
+    font-size: 1.8rem;
+    color: var(--Letras);
+    font-style: italic;
+}
+.personajes {
+    padding: 0 0 1rem 0;
+    color: var(--Letras);
+    font-size: 4rem;
+    margin: 0 2rem;
+    border: solid 3px #000000;
+    border-radius: 2rem;
+    background-color: var(--Fondo);
+    box-shadow: 0 0.8rem 1.2rem #00000033;
+    overflow: hidden;
+    width: 479px;
+    height: 700px;
+    transition: 0.5s;
+}
+.personajes:focus{
+    background-color: #000000f3;
+    box-shadow: 0 1.2rem 1.6rem #0000008a;
+    transform: translateY(-20px);
+    transition: 0.5s;
+    height: 820px;
+    .tarjeta-info{
+        display: block; 
+    }
+}
+.img-personajes {
+    padding: 1rem;
+    border-radius: 3rem;
+    width: 100%;
+    height: 609px;
+    object-fit: cover;
+}
+section{
+    font-size: 105%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.contenedor_abajo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem 3rem 2rem;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+h3{
+    margin-bottom: 1rem;
+}
+.tarjeta-info{
+    display: none;
+    transition: 0.3s;
+    font-size: 1.4rem; 
+    max-width: 100%; 
+}
+header {
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 77.3px;
+
+}
+footer{
+    background-color: #000000;
+    border-top: var(--Decoracion) solid 2px;
+    padding: 2rem;
+}
+#informacion-Footer{
+    color: var(--Letras);
+    text-align: center;
+    font-size: 2rem;
+}
+nav > ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 5rem;
+}
+footer *{
+    font-size: 2rem;
+}
+footer { 
+    padding-top: 5rem; 
+    background-color: #2d2d2d; 
+    display: flex; 
+    flex-direction: column;; 
+    align-items: center; 
+    align-content: center; 
+    flex-wrap: wrap; 
+    border-top: 5px solid var(--Decoracion); 
+} 
+
+.div-footer a { 
+    margin-left: 2.5rem; 
+    color: var(--Letras); 
+    text-decoration: none; 
+} 
+
+.div-footer > p, a, h3 { 
+    margin-top: 1rem; 
+} 
+
+.div-footer { 
+    text-align: center; 
+    color: var(--Letras); 
+    margin: 0rem 0 5rem 0; 
+    width: 80%; 
+    border-top: 2px solid #585858; 
+} 
+
+.div-footer > a:hover { 
+    text-decoration: underline 0.2rem; 
+    text-underline-offset: 0.5rem; 
+    color: var(--Decoracion); 
+} 
+
+.div-footer > a:focus { 
+    background-color: aliceblue; 
+} 
+ul > li {
+    list-style: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+li > a:hover {
+    text-decoration: underline 0.2rem;
+    text-underline-offset: 0.5rem;
+    color: #d4a574;
+}
+
+.logo-nav img {
+    width: 28rem;
+    margin-left: 5rem;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+#guia-nav {
+    color: #d4a574;
+}
+
+
+label i {
+    font-size: 4rem;
+}
+
+.ctn-menu {
+    display: none;
+    color: white;
+    margin-right: 5rem;
+}
+
+
+nav  input {
+    display: none;
+}
+@media screen and (max-width: 1150px){
+    #titulo h1{
+        font-size: 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 1100px) {
+    main{
+        padding: 3rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    .tarjeta-info{
+        font-size: 1.2rem;
+    }
+    .personajes{
+        width: 409px;
+        height: 580px;
+    }
+    .img-personajes{
+        height: 509px;
+    }
+    .contenedor_abajo{
+        padding: 0 2rem 1.5rem 2rem;
+    }
+    .personajes:focus{
+        height: 720px;
+    }
+}
+
+@media screen and (max-width: 1010px){
+    #titulo{
+        margin: 1rem 8rem 3rem 8rem ;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .tarjeta-info{
+        font-size: 0.9rem;
+    }
+    .personajes{
+        width: 349px;
+        height: 570px;
+    }
+    .personajes:focus{
+        height: 660px;
+    }
+    .contenedor_abajo{
+        padding: 0 2rem 1rem 2rem;
+    }
+    
+}
+@media screen and (max-width: 935px){
+    #titulo h1{
+        font-size: 2rem;
+    }
+    #titulo p {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 895px){
+    h3{
+        font-size: 4rem;
+    }
+    .tarjeta-info{
+        font-size: 2rem;
+    }
+    .personajes{
+        width: 639px;
+        height: 800px;
+    }
+    .personajes:focus{
+        height: 975px;
+    }
+    .contenedor_abajo{
+        padding: 0 2rem 1rem 2rem;
+    }
+    .img-personajes{
+        height: 700px;
+    }
+}
+@media screen and (max-width: 768px){
+    #titulo h1{
+        font-size: 3rem;
+    }
+    #titulo{
+        margin: 1rem 4rem 3rem 4rem ;
+    }
+    .tarjeta-info{
+        font-size: 1.9rem;
+    }
+    .ctn-menu {
+        display: block;
+    }
+
+    .ctn-menu i {
+        cursor: pointer;
+    }
+
+    .logo-nav img {
+        width: 24rem;
+        margin-left: 1.5rem;
+    }
+
+    .ctn-menu {
+        margin-right: 1.5rem;
+    }
+
+
+    nav > ul {
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        top: 7.2rem;
+        gap: 10rem;
+        /* height: 91vh; */
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+
+    }
+
+    li > a {
+        font-size: 5rem;
+    }
+
+    #menu-hamburguesa:checked + .ctn-links {
+        height: 91vh; 
+    }
+}
+
+@media screen and (max-width: 670px){
+    #titulo h1{
+        font-size: 2rem;
+    }
+    .personajes{
+        height: 800px;
+    }
+    .personajes:focus{
+        height: 980px;
+    }
+    .tarjeta-info{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 550px){
+    #informacion-Footer{
+        font-size: 1.5rem;
+    }
+    #titulo h1{
+        font-size: 1.5rem;
+    }
+    #titulo p {
+        font-size: 1.3rem;
+    }
+    .tarjeta-info{
+        font-size: 1.7rem;
+    }
+    .personajes{
+        height: 640px;
+    }
+    .personajes:focus{
+        height: 860px;
+    }
+    .img-personajes{
+        height: 540px;
+    }
+}
+
+@media screen and (max-width: 490px){
+    #titulo{
+        margin: 1rem 1rem 3rem 1rem ;
+    }
+    .tarjeta-info{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    .personajes{
+        height: 430px;
+    }
+    .personajes:focus{
+        height: 660px;
+    }
+    .img-personajes{
+        height: 360px;
+    }
+    li > a {
+        font-size: 3.6rem;
+    }
+}
+@media screen and (max-width: 410px){
+    .tarjeta-info{
+        font-size: 1.5rem;
+    }
+    .personajes{
+        height: 390px;
+    }
+    .personajes:focus{
+        height: 620px;
+    }
+    .img-personajes{
+        height: 320px;
+    }
+}
+@media screen and (max-width: 395px){
+    h3{
+        font-size: 2.2rem;
+    }
+    .tarjeta-info{
+        font-size: 1.3rem;
+    }
+    .personajes{
+        height: 360px;
+    }
+    .personajes:focus{
+        height: 590px;
+    }
+    .img-personajes{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 370px){
+    .personajes{
+        height: 340px;
+    }
+    .personajes:focus{
+        height: 570px;
+    }
+    .img-personajes{
+        height: 280px;
+    }
+    .tarjeta-info{
+        font-size: 1.25rem;
+    }
+}
