@@ -403,7 +403,7 @@ nav  input {
         height: 430px;
     }
     .personajes:focus{
-        height: 660px;
+        height: 680px;
     }
     .img-personajes{
         height: 360px;
@@ -420,7 +420,7 @@ nav  input {
         height: 390px;
     }
     .personajes:focus{
-        height: 620px;
+        height: 640px;
     }
     .img-personajes{
         height: 320px;
@@ -457,6 +457,7 @@ nav  input {
         font-size: 1.25rem;
     }
 }
+
 
 
 
