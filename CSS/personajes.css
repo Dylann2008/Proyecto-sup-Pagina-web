@@ -457,6 +457,12 @@ nav  input {
         font-size: 1.25rem;
     }
 }
+@media screen  and (max-width: 355px){
+    .personajes:focus{
+        height: 585px;
+    }
+}
+
 
 
 
