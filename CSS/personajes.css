@@ -359,7 +359,7 @@ nav  input {
         height: 800px;
     }
     .personajes:focus{
-        height: 980px;
+        height: 995px;
     }
     .tarjeta-info{
         font-size: 1.8rem;
@@ -457,5 +457,6 @@ nav  input {
         font-size: 1.25rem;
     }
 }
+
 
 
