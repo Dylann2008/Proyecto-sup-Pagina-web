@@ -17,6 +17,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    font-size: 1.6rem;
 }
 main{
     padding: 5rem 0;
@@ -471,6 +472,7 @@ nav  input {
         font-size:2rem;
     }
 }
+
 
 
 
