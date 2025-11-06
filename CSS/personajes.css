@@ -62,7 +62,7 @@ main{
     box-shadow: 0 1.2rem 1.6rem #0000008a;
     transform: translateY(-20px);
     transition: 0.5s;
-    height: 820px;
+    height: 850px;
     .tarjeta-info{
         display: block; 
     }
@@ -457,3 +457,4 @@ nav  input {
         font-size: 1.25rem;
     }
 }
+
