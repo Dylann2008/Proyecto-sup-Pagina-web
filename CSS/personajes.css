@@ -461,7 +461,11 @@ nav  input {
     .personajes:focus{
         height: 585px;
     }
+    .tarjeta-info{
+        font-size: 1.15rem;
+    }
 }
+
 
 
 
