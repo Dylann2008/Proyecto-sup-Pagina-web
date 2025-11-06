@@ -288,7 +288,7 @@ nav  input {
         height: 800px;
     }
     .personajes:focus{
-        height: 975px;
+        height: 985px;
     }
     .contenedor_abajo{
         padding: 0 2rem 1rem 2rem;
@@ -457,4 +457,5 @@ nav  input {
         font-size: 1.25rem;
     }
 }
+
 
