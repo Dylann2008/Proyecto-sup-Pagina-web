@@ -190,9 +190,6 @@ li > a:hover {
     text-underline-offset: 0.5rem;
     color: #d4a574;
 }
-.logo-nav{
-    margin-left: 77rem;
-}
 .logo-nav img {
     width: 28rem;
     margin-left: 5rem;
@@ -483,3 +480,4 @@ nav  input {
         font-size:2rem;
     }
 }
+
